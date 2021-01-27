@@ -1,1 +1,1 @@
-worker: python bot/MandatedReporterBot.py
+worker: python bot/FilterBot.py
