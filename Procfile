@@ -1,1 +1,1 @@
-worker: python bot/FilterBot.py
+worker: python FilterBot.py
