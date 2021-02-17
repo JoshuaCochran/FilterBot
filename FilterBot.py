@@ -35,8 +35,8 @@ def write_filter():
 async def word_filter(ctx, cmd=None, word=None):
 	channel = bot.get_channel(bot.reportingChannel)
 	if cmd is None or cmd.lower() == 'help':
-		await ctx.send("Commands: \n!filter remove [word] to add a word to the filter\n"
-					   + "!filter add [word] to remove a word from the filter\n"
+		await ctx.send("Commands: \n\"Type !filter remove [word]\" without the brackets to add a word to the filter\n"
+					   + "Type \"!filter add [word]\" without the brackets to remove a word from the filter\n"
 					   + "!filter list to list all the words in the filter\n"
 					   + "!filter reload to reload the list of words in the filter (only use if not working)")
 	elif cmd.lower() == "remove":
