@@ -31,7 +31,7 @@ def write_filter():
 
 
 @bot.command(name='filter', help='Allows user to configure the filter')
-@commands.has_role('admin')
+@commands.has_any_role('QRC Staff', 'Coordinator')
 async def word_filter(ctx, cmd=None, word=None):
 	channel = bot.get_channel(bot.reportingChannel)
 	if cmd is None or cmd.lower() == 'help':
