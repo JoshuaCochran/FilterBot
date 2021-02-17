@@ -71,7 +71,7 @@ async def on_message(message):
 		return
 
 	for word in bot.reportableWords:
-		if word in message.content.lower() and discord.utils.get(message.author.roles, name='admin') is None:
+		if word in message.content.lower() and discord.utils.get(message.author.roles, name='QRC Staff') is None and discord.utils.get(message.author.roles, name='Coordinator') is None:
 			channel = bot.get_channel(bot.reportingChannel)
 			await channel.send("User "
 							   + str(message.author.mention)
