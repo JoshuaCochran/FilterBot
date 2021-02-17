@@ -8,7 +8,7 @@ import os
 bot = commands.Bot(command_prefix='!')
 bot.reportableWords = []
 token = os.getenv("DISCORD_TOKEN")
-bot.reportingChannel = 803437810656083991
+bot.reportingChannel = 747568940938690613
 
 def reload_filter():
 	words = []
